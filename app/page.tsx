@@ -2,17 +2,22 @@ import Card from "./components/Card";
 import Parallax from "./components/Paralax";
 import TextBox from "./components/TextBox";
 import Image from "next/image";
+import VisitorCounter from "./components/VisitorCounter";
 
 export default function Home() {
   return (
     <div>
       <div className="grid-background h-screen flex flex-col justify-center items-center overflow-hidden relative">
+        <VisitorCounter
+          style={"absolute top-0 right-0 m-4 text-white font-custom"}
+        />
         <Image
-          className=" rounded"
+          className="rounded h-auto w-auto"
           src="/profile.jpg"
           width={130}
           height={130}
           alt="Hugo Maltese profile"
+          priority={true}
         />
         <div>
           <TextBox
@@ -22,7 +27,7 @@ export default function Home() {
           />
           <div className="flex items-end">
             <TextBox
-              text="Développeur fullstack"
+              text="Développeur Fullstack"
               style="text-white font-custom text-5xl"
               animation={1}
             />
@@ -36,23 +41,38 @@ export default function Home() {
           <Card
             title="Ingénieur Backend Junior, Fruitz (Bumble Studio)"
             date="2021 - 2022"
-            desc={["Participer au développement de services backend (en Golang)" ,"Améliorer et automatiser des processus tels que les builds, CI/CD et tests" ,"Assurer un exemple de qualité de code par des revues techniques approfondies (Pull requests)" ,"Collaborer sur l'organisation du travail avec le reste des équipes produit et ingénierie Rédiger de la documentation technique"]}
+            desc={[
+              "Participer au développement de services backend (en Golang)",
+              "Améliorer et automatiser des processus tels que les builds, CI/CD et tests",
+              "Assurer un exemple de qualité de code par des revues techniques approfondies (Pull requests)",
+              "Collaborer sur l'organisation du travail avec le reste des équipes produit et ingénierie Rédiger de la documentation technique",
+            ]}
           />
-          <Card title="Freelance" date="2021" desc={["Développeur FullStack"]} />
+          <Card
+            title="Freelance"
+            date="2021"
+            desc={["Développeur FullStack"]}
+          />
           <Card
             title="Lab"
             date="Oct 2020 - Jan 2021"
-            desc={["Application de calcul scientifique en VBA pour minimiser la pollution des navires de fret et des bateaux de croisière."]}
+            desc={[
+              "Application de calcul scientifique en VBA pour minimiser la pollution des navires de fret et des bateaux de croisière.",
+            ]}
           />
           <Card
             title="ENA, Hackaton"
             date="2019"
-            desc={["Recherche et mise en œuvre avec une équipe de hauts fonctionnaires d'une solution à un problème de politique publique."]}
+            desc={[
+              "Recherche et mise en œuvre avec une équipe de hauts fonctionnaires d'une solution à un problème de politique publique.",
+            ]}
           />
           <Card
             title="WaveStone, Cybersecurity challenge"
             date="2019"
-            desc={["Audit de sécurité afin d'identifier les différentes failles au seins de leur plateforme"]}
+            desc={[
+              "Audit de sécurité afin d'identifier les différentes failles au seins de leur plateforme",
+            ]}
           />
         </div>
       </div>
