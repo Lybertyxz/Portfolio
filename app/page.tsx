@@ -1,3 +1,5 @@
+import Card from "./components/Card";
+import Parallax from "./components/Paralax";
 import TextBox from "./components/TextBox";
 import Image from "next/image";
 
@@ -28,8 +30,31 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="h-screen bg-[url('/path/to/your/image.jpg')] bg-cover flex justify-center items-center">
-        <p className="text-white">Section 2</p>
+      <Parallax />
+      <div className="grid-background">
+        <div className="max-w-lg space-y-4 mx-auto py-24 text-neutral-300">
+          <Card
+            title="Ingénieur Backend Junior, Fruitz (Bumble Studio)"
+            date="2021 - 2022"
+            desc={["Participer au développement de services backend (en Golang)" ,"Améliorer et automatiser des processus tels que les builds, CI/CD et tests" ,"Assurer un exemple de qualité de code par des revues techniques approfondies (Pull requests)" ,"Collaborer sur l'organisation du travail avec le reste des équipes produit et ingénierie Rédiger de la documentation technique"]}
+          />
+          <Card title="Freelance" date="2021" desc={["Développeur FullStack"]} />
+          <Card
+            title="Lab"
+            date="Oct 2020 - Jan 2021"
+            desc={["Application de calcul scientifique en VBA pour minimiser la pollution des navires de fret et des bateaux de croisière."]}
+          />
+          <Card
+            title="ENA, Hackaton"
+            date="2019"
+            desc={["Recherche et mise en œuvre avec une équipe de hauts fonctionnaires d'une solution à un problème de politique publique."]}
+          />
+          <Card
+            title="WaveStone, Cybersecurity challenge"
+            date="2019"
+            desc={["Audit de sécurité afin d'identifier les différentes failles au seins de leur plateforme"]}
+          />
+        </div>
       </div>
     </div>
   );
