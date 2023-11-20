@@ -12,7 +12,7 @@ export default function Home() {
           src="/profile.jpg"
           width={130}
           height={130}
-          alt="My profile picture"
+          alt="Hugo Maltese profile"
         />
         <div>
           <TextBox
@@ -22,7 +22,7 @@ export default function Home() {
           />
           <div className="flex items-end">
             <TextBox
-              text="Software developper"
+              text="Développeur fullstack"
               style="text-white font-custom text-5xl"
               animation={1}
             />
