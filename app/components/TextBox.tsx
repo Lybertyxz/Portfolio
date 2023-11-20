@@ -28,10 +28,10 @@ function TextBox({ text, style, animation }: TextBoxProps) {
   if (animation == 2) {
     return (
       <motion.div
-      initial={{ opacity: 0, scaleY: 0 }}
-      animate={{ opacity: 1, scaleY: 1 }}
-      transition={{ duration: 0.5 }}
-      style={{ originY: 0 }}
+        initial={{ opacity: 0, scaleY: 0 }}
+        animate={{ opacity: 1, scaleY: 1 }}
+        transition={{ duration: 0.5 }}
+        style={{ originY: 0 }}
         className={style}
       >
         {text}
