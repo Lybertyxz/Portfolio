@@ -49,7 +49,7 @@ export default function Home() {
     <div>
       <div className="grid-background h-screen flex flex-col justify-center items-center overflow-hidden relative">
         <VisitorCounter
-          style={"absolute top-4 right-4 text-white font-bold text-lg bg-opacity-50 bg-black px-4 py-2 rounded-full shadow-lg hover:bg-opacity-70 transition ease-in-out duration-300"}
+          style={"absolute top-4 right-4 text-white font-bold text-lg px-4 py-2 rounded-full shadow-lg hover:bg-opacity-70 transition ease-in-out duration-300"}
         />
         <Image
           className="rounded h-auto w-auto"
