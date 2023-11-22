@@ -40,7 +40,8 @@ export default function Home() {
         "Participer au développement de services backend (en Golang)",
         "Améliorer et automatiser des processus tels que les builds, CI/CD et tests",
         "Assurer un exemple de qualité de code par des revues techniques approfondies (Pull requests)",
-        "Collaborer sur l'organisation du travail avec le reste des équipes produit et ingénierie Rédiger de la documentation technique",
+        "Collaborer sur l'organisation du travail avec le reste l'équipe Product & Engineering",
+        "Rédiger de la documentation technique",
       ],
     },
   ];
