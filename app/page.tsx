@@ -1,11 +1,11 @@
 import Parallax from "./components/Paralax";
 import TextBox from "./components/TextBox";
 import Image from "next/image";
-import VisitorCounter from "./components/VisitorCounter";
 import Timeline from "./components/Timeline";
-import Link from 'next/link';
+import VisitorCounter from "./components/Visitors";
 
 export default function Home() {
+
   const timelineItems = [
     {
       title: "WaveStone, Cybersecurity challenge",
@@ -49,9 +49,9 @@ export default function Home() {
   return (
     <div>
       <div className="grid-background h-screen flex flex-col justify-center items-center overflow-hidden relative">
-        <VisitorCounter
-          style={"absolute top-4 right-4 text-white font-bold text-lg px-4 py-2 rounded-full shadow-lg hover:bg-opacity-70 transition ease-in-out duration-300"}
-        />
+        <div className="absolute top-4 right-4 text-white font-bold text-lg px-4 py-2 rounded-full shadow-lg hover:bg-opacity-70 transition ease-in-out duration-300">
+        <VisitorCounter />
+        </div>
         <Image
           className="rounded h-auto w-auto"
           src="/profile.jpg"
@@ -76,17 +76,46 @@ export default function Home() {
           </div>
         </div>
         <div className="absolute bottom-10 flex space-x-6">
-    <a href="https://www.linkedin.com/in/hugo-maltese-02022000hm/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-      <Image src="/linkedin-color.svg" alt="LinkedIn" width={40} height={40} />
-    </a>
-    <a href="https://github.com/Lybertyxz" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-      <Image src="/github-color.svg" alt="GitHub" width={40} height={40} />
-    </a>
-    <a href="hugo.maltese@epitech.eu" className="hover:scale-110 transition-transform">
-      <Image src="/email-color.svg" alt="Mail" width={40} height={40} />
-    </a>
-    <a className="px-4 py-2 bg-white text-black rounded-full shadow-lg hover:bg-gray-100 transition-transform hover:scale-110" href="/CV.pdf" download><button>Télécharger le CV</button></a>
-  </div>
+          <a
+            href="https://www.linkedin.com/in/hugo-maltese-02022000hm/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 transition-transform"
+          >
+            <Image
+              src="/linkedin-color.svg"
+              alt="LinkedIn"
+              width={40}
+              height={40}
+            />
+          </a>
+          <a
+            href="https://github.com/Lybertyxz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 transition-transform"
+          >
+            <Image
+              src="/github-color.svg"
+              alt="GitHub"
+              width={40}
+              height={40}
+            />
+          </a>
+          <a
+            href="hugo.maltese@epitech.eu"
+            className="hover:scale-110 transition-transform"
+          >
+            <Image src="/email-color.svg" alt="Mail" width={40} height={40} />
+          </a>
+          <a
+            className="px-4 py-2 bg-white text-black rounded-full shadow-lg hover:bg-gray-100 transition-transform hover:scale-110"
+            href="/CV.pdf"
+            download
+          >
+            <button>Télécharger le CV</button>
+          </a>
+        </div>
       </div>
       <Parallax />
       <div className="grid-background">
